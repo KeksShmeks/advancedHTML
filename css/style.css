@@ -135,16 +135,8 @@
   margin: 0;
   list-style: none;
 }
-.header-menu__list__line {
+.header-menu__list_line {
   margin: 0 0 12px 0;
-}
-.header-menu__list__line_2 {
-  margin: 0 0 11px 0;
-}
-.header-menu__list_2 {
-  padding: 0 0 0 20px;
-  margin: 0;
-  list-style: none;
 }
 .header-menu__link {
   text-transform: uppercase;
@@ -189,6 +181,12 @@
 }
 .display-block {
   display: block;
+}
+.margin0_0_11_0 {
+  margin: 0 0 11px 0;
+}
+.padding0_0_0_20 {
+  padding: 0 0 0 20px;
 }
 .brand {
   width: 100%;
@@ -600,7 +598,7 @@
   align-items: flex-start;
   flex-wrap: wrap;
 }
-.registration-form__application__label {
+.registration-form__application_label {
   width: 100%;
   margin: 0 0 20.5px 0;
   font-size: 16px;
@@ -608,7 +606,7 @@
   color: #222222;
   text-transform: capitalize;
 }
-.registration-form__application__input {
+.registration-form__application_input {
   width: 360px;
   height: 45px;
   padding: 13px 0 16px 17px;
@@ -621,30 +619,30 @@
   font-family: 'lato-light';
   color: #b1b1b1;
 }
-.registration-form__application__input:focus {
+.registration-form__application_input:focus {
   background-color: #fff;
 }
-.registration-form__application__input:nth-child(3) {
+.registration-form__application_input:nth-child(3) {
   margin: 0 0 31px 0;
 }
-.registration-form__application__input:nth-child(8) {
+.registration-form__application_input:nth-child(8) {
   margin: 0 0 15px 0;
 }
-.registration-form__application__input_radio {
+.registration-form__application_input_radio {
   position: absolute;
   z-index: -1;
   opacity: 0;
 }
-.registration-form__application__input_radio:checked + .registration-form__application__input_radio_label:after {
+.registration-form__application_input_radio:checked + .registration-form__application_input_radio_label:after {
   opacity: 1;
 }
-.registration-form__application__input_radio + .registration-form__application__input_radio_label {
+.registration-form__application_input_radio + .registration-form__application_input_radio_label {
   position: relative;
   padding: 0 0 0 35px;
   cursor: pointer;
   margin: 0 10px 33px 0;
 }
-.registration-form__application__input_radio + .registration-form__application__input_radio_label:before {
+.registration-form__application_input_radio + .registration-form__application_input_radio_label:before {
   content: '';
   position: absolute;
   top: -3px;
@@ -655,7 +653,7 @@
   border-radius: 50%;
   background: #FFF;
 }
-.registration-form__application__input_radio + .registration-form__application__input_radio_label:after {
+.registration-form__application_input_radio + .registration-form__application_input_radio_label:after {
   content: '';
   position: absolute;
   top: 0px;
@@ -666,19 +664,19 @@
   background: #222222;
   opacity: 0;
 }
-.registration-form__application__input_radio_label {
+.registration-form__application_input_radio_label {
   margin: 0 20px 0 0;
   font-size: 11px;
   font-family: 'lato-light';
   color: #000000;
 }
-.registration-form__application__text {
+.registration-form__application_text {
   margin: 0 0 39px 0;
   font-size: 13px;
   font-family: 'lato-light';
   color: #b1b1b1;
 }
-.registration-form__application__button {
+.registration-form__application_button {
   width: 165px;
   height: 48px;
   box-sizing: border-box;
@@ -690,32 +688,32 @@
   justify-content: center;
   align-items: center;
 }
-.registration-form__application__button_text {
+.registration-form__application_button_text {
   margin: 0 20px 0 0;
   font-size: 14px;
   font-family: 'lato-medium';
   color: #ffffff;
   text-transform: uppercase;
 }
-.registration-form__application__button_icon {
+.registration-form__application_button_icon {
   fill: #fff;
 }
-.registration-form__application__button:hover {
+.registration-form__application_button:hover {
   background-color: #fff;
 }
-.registration-form__application__button:hover .registration-form__application__button_text {
+.registration-form__application_button:hover .registration-form__application_button_text {
   color: #F16D7F;
 }
-.registration-form__application__button:hover .registration-form__application__button_icon {
+.registration-form__application_button:hover .registration-form__application_button_icon {
   fill: #F16D7F;
 }
-.registration-form__application__button:active {
+.registration-form__application_button:active {
   opacity: 0.7;
 }
-.registration-form__application__button:active .registration-form__application__button_text {
+.registration-form__application_button:active .registration-form__application_button_text {
   opacity: 0.7;
 }
-.registration-form__application__button:active .registration-form__application__button_icon {
+.registration-form__application_button:active .registration-form__application_button_icon {
   opacity: 0.7;
 }
 .registration-form__percs {
@@ -737,17 +735,17 @@
 .registration-form__percs_text {
   margin: 0 0 21px 0;
 }
-.registration-form__percs__list {
+.registration-form__percs_list {
   padding: 0;
   margin: 0;
   list-style: none;
 }
-.registration-form__percs__list_line {
+.registration-form__percs_list_line {
   padding: 0 0 0 43px;
   margin: 0 0 16px 0;
   position: relative;
 }
-.registration-form__percs__list_line:after {
+.registration-form__percs_list_line:after {
   content: "";
   display: block;
   width: 20px;
@@ -758,6 +756,6 @@
   top: 7px;
   left: 0;
 }
-.registration-form__percs__list_line:nth-child(5) {
+.registration-form__percs_list_line:nth-child(5) {
   margin: 0;
 }

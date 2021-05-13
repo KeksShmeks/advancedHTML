@@ -1,0 +1,221 @@
+.registration {
+    width: @width;
+    margin: @margin;
+    background-color: #fff;
+
+    &__wrp {
+        min-height: 148px;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        background-color: #F8F3F4;
+        padding: 0 0 0 230px;
+        box-sizing: border-box;
+    }
+
+    &__title {
+        margin: 0;
+        .text (24px, 'lato-medium', #F16D7F);
+        text-transform: uppercase;
+    }
+}
+
+.registration-form {
+    min-height: 675px;
+    padding: 64px 230px 96px 230px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+}
+
+.registration-form__profile {
+    width: 360px;
+    margin: 0 128px 0 0;
+}
+
+.registration-form__application {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+
+    &_label {
+        width: 100%;
+        margin: 0 0 20.5px 0;
+        .text (16px, 'lato-light', #222222);
+        text-transform: capitalize;
+    }
+
+    &_input {
+        width: 360px;
+        height: 45px;
+        padding: 13px 0 16px 17px;
+        margin: 0 0 20px 0;
+        box-sizing: border-box;
+        background-color: #fff;
+        border: none;
+        outline: 1px solid #A4A4A4;
+        .text (13px, 'lato-light', #B1B1B1);
+
+        &:focus {
+            background-color: #fff;
+        }
+
+        &:nth-child(3) {
+            margin: 0 0 31px 0;
+        }
+
+        &:nth-child(8) {
+            margin: 0 0 15px 0;
+        }
+
+        &_radio {
+            position: absolute;
+            z-index: -1;
+            opacity: 0;
+
+            &:checked+.registration-form__application_input_radio_label:after {
+                opacity: 1;
+            }
+
+            &+.registration-form__application_input_radio_label {
+                position: relative;
+                padding: 0 0 0 35px;
+                cursor: pointer;
+                margin: 0 10px 33px 0;
+
+                &:before {
+                    content: '';
+                    position: absolute;
+                    top: -3px;
+                    left: 0;
+                    width: 17px;
+                    height: 17px;
+                    border: 1px solid #A4A4A4;
+                    border-radius: 50%;
+                    background: #FFF;
+                }
+
+                &:after {
+                    content: '';
+                    position: absolute;
+                    top: 0px;
+                    left: 3px;
+                    width: 13px;
+                    height: 13px;
+                    border-radius: 50%;
+                    background: #222222;
+                    opacity: 0;
+                    // transition: .2s;
+                }
+            }
+
+            &_label {
+
+                margin: 0 20px 0 0;
+                .text (11px, 'lato-light', #000);
+            }
+        }
+    }
+
+    &_text {
+        margin: 0 0 39px 0;
+        .text (13px, 'lato-light', #B1B1B1);
+    }
+
+    &_button {
+        width: 165px;
+        height: 48px;
+        box-sizing: border-box;
+        background-color: #F16D7F;
+        border: 1px solid #F16D7F;
+        outline: none;
+        cursor: pointer;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+
+        &_text {
+            margin: 0 20px 0 0;
+            .text (14px, 'lato-medium', #fff);
+            text-transform: uppercase;
+        }
+
+        &_icon {
+            fill:#fff;
+        }
+
+        &:hover {
+            background-color: #fff;
+        }
+
+        &:hover .registration-form__application_button_text {
+            color: #F16D7F;
+        }
+
+        &:hover .registration-form__application_button_icon {
+            fill: #F16D7F;
+        }
+
+        &:active {
+            opacity: 0.7;
+        }
+
+        &:active .registration-form__application_button_text {
+            opacity: 0.7;
+        }
+
+        &:active .registration-form__application_button_icon {
+            opacity: 0.7;
+        }
+    }
+    
+}
+
+.registration-form__percs {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+
+    .text (24px, 'lato-light', #000);
+
+    &_title {
+        margin: 0 0 22px 0;
+        .text (24px, 'lato-light', #000);
+        font-weight: 300;
+        text-transform: uppercase;
+    }
+
+    &_text {
+        margin: 0 0 21px 0;
+    }
+
+    &_list {
+        padding: 0;
+        margin: 0;
+        list-style: none;
+
+        &_line {
+            padding: 0 0 0 43px;
+            margin: 0 0 16px 0;
+            position: relative;
+
+            &:after {
+                content: "";
+                display: block;
+                width: 20px;
+                height: 16px;
+                background-image: url(../img/registration/checkMark.png);
+                background-color: transparent;
+                position: absolute;
+                top: 7px;
+                left: 0;
+            }
+
+            &:nth-child(5) {
+                margin: 0;
+            }
+        }
+    }
+}

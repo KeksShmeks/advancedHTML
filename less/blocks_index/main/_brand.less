@@ -1,0 +1,32 @@
+
+.brand {
+    width: @width;
+    min-height: 764px;
+    background-color: #F1E4E6;
+    background-image: url(../img/brand/brand_img.png);
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.brand-name {
+    padding: 0 0 0 16px;
+    box-sizing: border-box;
+    position: absolute;
+    left: 55.75%;
+    top: 38%;
+    border-left: 12px solid #F16D7F;
+
+    &__title {
+        margin: 0;
+        text-transform: uppercase;
+        .text (37px, 'lato-semibold', #000);
+
+        &_text_bold {
+            .text (48px, 'lato-black', #000);
+        }
+
+        &_text_color {
+            .text (37px, 'lato-semibold', #F16D7F);
+        }
+    }
+}
