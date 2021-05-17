@@ -1,0 +1,137 @@
+
+.products {
+    width: @width;
+    min-height: 1538px;
+    padding: 48px 230px 96px 230px;
+    box-sizing: border-box;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+}
+
+.products-title {
+    width: 100%;
+    padding: 0;
+    box-sizing: border-box;
+    margin: 0 0 48px 0;
+    text-align: center;
+
+    &__text {
+        margin: 0 0 6px 0;
+        .text (30px, 'lato-semibold', #000);
+        text-transform: capitalize;
+    }
+
+    &__text2 {
+        margin: 0;
+        .text (14px, 'lato-semibold', #9F9F9F);
+    }
+}
+
+.products-item {
+    width: 360px;
+    padding: 0;
+    box-sizing: border-box;
+    margin: 0 30px 30px 0;
+    position: relative;
+
+    &:hover .visible-unvisible {
+        display: flex;
+    }
+
+    &:hover .products-item__img {
+        filter: brightness(30%);
+    }
+
+    &__img {
+        display: block;
+    }
+
+    &__wrp {
+        padding: 25px 28px 20px 16px;
+        box-sizing: border-box;
+        background-color: #F8F8F8;
+    }
+
+    &__title {
+        margin: 0 0 12px 0;
+        .text (13px, 'lato-medium', #000);
+        text-transform: uppercase;
+    }
+
+    &__text {
+        margin: 0 0 18px 0;
+        .text (14px, 'lato-light', #5D5D5D);
+    }
+
+    &__price {
+        .text (16px, 'lato-medium', #F16D7F);
+    }
+
+    &:nth-child(4) {
+        margin: 0 0 30px 0;
+    }
+
+    &:nth-child(5),
+    &:nth-child(6) {
+        margin: 0 30px 48px 0;
+    }
+
+    &:nth-child(7) {
+        margin: 0 0 48px 0;
+    }
+
+    &__btn {
+        padding: 10px;
+        box-sizing: border-box;
+        outline: none;
+        border: 1px solid #fff;
+        background-color: transparent;
+        position: absolute;
+        top: 35%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        display: none;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+
+        &_icon {
+            fill: #fff;
+            margin: 0 11px 0 0;
+        }
+
+        &_text {
+            .text (14px, 'lato-medium', #fff);
+        }
+
+        &:hover {
+            opacity: 0.7;
+        }
+    }
+}
+
+.products__btn {
+    min-width: 211px;
+    padding: 10px 20px 10px 20px;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: 1px solid #FF6A6A;
+    outline: none;
+    background-color: #fff;
+    outline: none;
+    .text (16px, 'lato-medium', #F26376);
+    text-transform: capitalize;
+    cursor: pointer;
+
+    &:hover {
+        background-color: #FF6A6A;
+        color: #fff;
+    }
+
+    &:active {
+        opacity: 0.7;
+    }
+}
