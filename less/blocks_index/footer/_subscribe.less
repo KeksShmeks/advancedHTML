@@ -1,7 +1,7 @@
 .subscribe {
     width: @width;
     min-height: 448px;
-    padding: 0 327px 0 230px;
+    padding: 10px 327px 10px 230px;
     box-sizing: border-box;
     background-color: #fff;
     background-image: url(../img/subscribe/subscribe_bg.jpg);
@@ -9,13 +9,10 @@
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
-
 }
 
 .subscribe-wrp {
     width: 360px;
-    padding: 0;
-    box-sizing: border-box;
     margin: 0 320px 0 0;
     text-align: center;
 
@@ -35,7 +32,6 @@
 }
 
 .post-email {
-
     display: flex;
     justify-content: center;
     align-items: center;
@@ -65,7 +61,7 @@
     .text (14px, 'lato-medium', #222224);
 
     &:focus {
-        background-color: #E1E1E1;
+        background-color: #f7f3f3;
         border: 1px solid #E1E1E1;
     }
 }
@@ -75,9 +71,19 @@
     height: 47px;
     box-sizing: border-box;
     background-color: #F16D7F;
-    border: 1px solid #F16D7F;
+    border: 1px solid #f1687b;
     border-radius: 0 20px 20px 0;
     outline: none;
     cursor: pointer;
     .text (14px, 'lato-medium', #fff);
+
+    &:hover,
+    &:focus {
+        background-color: #f15353;
+        border: 1px solid #f15353;
+    }
+
+    &:active {
+        opacity: 0.7;
+    }
 }

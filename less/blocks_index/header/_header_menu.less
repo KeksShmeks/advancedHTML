@@ -1,5 +1,3 @@
-
-
 .header-menu {
     display: none;
     width: 232px;
@@ -17,7 +15,6 @@
         margin: 0 0 24px 0;
         text-transform: uppercase;
         .text (14px, 'lato-semibold', #000);
-
     }
 
     &__list {
@@ -35,10 +32,28 @@
         .text (14px, 'lato-medium', #F16D7F);
         text-decoration: none;
 
+        &:hover,
+        &:focus {
+            text-decoration: underline dotted #F16D7F;
+        }
+
+        &:active {
+            opacity: 0.8;
+        }
+
         &_2 {
             text-transform: capitalize;
             .text (14px, 'lato-medium', #6F6E6E);
             text-decoration: none;
+
+            &:hover,
+            &:focus {
+                text-decoration: underline dotted #6F6E6E;
+            }
+
+            &:active {
+                opacity: 0.8;
+            }
         }
     }
 
@@ -51,8 +66,13 @@
         opacity: 0.3;
         cursor: pointer;
 
-        &:hover {
+        &:hover,
+        &:focus {
             opacity: 1;
+        }
+
+        &:active {
+            opacity: 0.8;
         }
 
         &:before,
