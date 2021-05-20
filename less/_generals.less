@@ -7,10 +7,12 @@
 .container {
     width: 1600px;
     margin: @margin;
-}
 
-@media (max-width: 1599px) {
-    .container {
+    .tablet ({
         width: 768px;
-    }
+    });
+
+    .mobile ({
+        width: 375px;
+    });
 }

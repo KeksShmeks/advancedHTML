@@ -6,12 +6,43 @@
     box-sizing: border-box;
     display: flex;
     justify-content: space-between;
+
+    .tablet ( {
+            padding: 24px 32px 33px 32px;
+        }
+
+    );
+
+    .mobile ( {
+            padding: 43px 0 9px 0;
+            justify-content: center;
+            flex-direction: column-reverse;
+            align-items: center;
+        }
+
+    );
 }
 
 .copyright__wrp {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
+
+    .mobile ( {
+            justify-content: center;
+        }
+
+    );
+
+    &:nth-child(2) {
+        .mobile ( {
+                margin: 0 0 40px 0;
+
+            }
+
+        );
+    }
 }
 
 .copyright__btn {
