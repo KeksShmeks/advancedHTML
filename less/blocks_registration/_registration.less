@@ -11,6 +11,18 @@
         background-color: #F8F3F4;
         padding: 0 0 0 230px;
         box-sizing: border-box;
+
+        .tablet ( {
+                padding: 0 0 0 16px;
+            }
+
+        );
+
+        .mobile ( {
+                justify-content: center;
+            }
+
+        );
     }
 
     &__title {
@@ -26,11 +38,30 @@
     display: flex;
     justify-content: space-between;
     flex-wrap: nowrap;
+
+    .tablet ( {
+            padding: 40px 16px 96px 16px;
+        }
+
+    );
+
+    .mobile ( {
+            flex-wrap: wrap;
+            padding: 40px 8px 96px 8px;
+        }
+
+    );
 }
 
 .registration-form__profile {
     width: 360px;
     margin: 0 128px 0 0;
+
+    .tablet ( {
+            margin: 0 22px 0 0;
+        }
+
+    );
 }
 
 .registration-form__application {
@@ -129,8 +160,13 @@
         &:active .registration-button-icon {
             opacity: 0.7;
         }
-    }
 
+        .mobile ( {
+                margin-bottom: 40px;
+            }
+
+        );
+    }
 }
 
 .registration-button-icon {
@@ -155,6 +191,7 @@
         border: 1px solid #A4A4A4;
         border-radius: 50%;
         background: #FFF;
+
     }
 
     &:after {
@@ -167,6 +204,7 @@
         border-radius: 50%;
         background: #222222;
         opacity: 0;
+
     }
 }
 
@@ -175,6 +213,12 @@
     flex-wrap: wrap;
     flex-direction: column;
     .text (24px, 'lato-light', #000);
+
+    .tablet ( {
+            .text (16px, 'lato-light', #000);
+        }
+
+    );
 
     &_title {
         margin: 0 0 22px 0;
@@ -207,6 +251,12 @@
             position: absolute;
             top: 7px;
             left: 0;
+
+            .mobile ( {
+                    top: 0px;
+                }
+
+            );
         }
 
         &:nth-child(5) {
