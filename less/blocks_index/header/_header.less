@@ -1,6 +1,5 @@
 .header {
-    width: 100%;
-    min-height: 75px;
+    width: @width;
     margin: @margin;
     background-color: #222222;
     padding: 18px 231px 19px 231px;
@@ -10,28 +9,22 @@
     position: relative;
 
     &-wrp {
-        margin: 0;
-        padding: 0;
-        min-height: 38px;
-        box-sizing: border-box;
-        display: flex;
-        justify-content: space-between;
-        align-items: flex-end;
+        align-self: center;
 
         &:nth-child(1)>button {
             margin: 0;
         }
     }
 
-    &-logo {
+    &-logo {    
         margin: 0 41px 0 0;
         text-decoration: none;
     }
 
     &-btn {
         padding: 0;
-        margin: 0 0 0 33px;
         box-sizing: border-box;
+        margin: 0 0 0 33px;
         outline: none;
         border: none;
         background-color: transparent;
@@ -55,17 +48,32 @@
                 position: absolute;
                 top: -3px;
                 left: 22px;
+                z-index: 5;
+            }
+
+            &:hover::before,
+            &:focus::before {
+                opacity: 0.7;
+            }
+
+            &:active::before {
+                opacity: 0.4;
             }
         }
 
-        &__search__icon,
-        &__menu__icon,
-        &__profile__icon,
-        &__cart__icon {
+        &__search-icon,
+        &__menu-icon,
+        &__profile-icon,
+        &__cart-icon {
             fill: #E8E8E8;
 
-            &:hover {
+            &:hover,
+            &:focus {
                 opacity: 0.7;
+            }
+
+            &:active {
+                opacity: 0.4;
             }
         }
     }

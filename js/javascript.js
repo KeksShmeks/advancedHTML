@@ -1,6 +1,6 @@
 'use strict'
 
-let button = document.querySelector('.header-btn__menu__icon');
+let button = document.querySelector('.header-btn__menu-icon');
 
 let navigation = document.querySelector('.header-menu');
 
