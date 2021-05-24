@@ -8,6 +8,18 @@
     justify-content: space-between;
     position: relative;
 
+    .tablet ( {
+            padding: 18px 41px 18px 32px;
+        }
+
+    );
+
+    .mobile ( {
+            padding: 18px 16px 18px 16px;
+        }
+
+    );
+
     &-wrp {
         align-self: center;
 
@@ -16,7 +28,7 @@
         }
     }
 
-    &-logo {    
+    &-logo {
         margin: 0 41px 0 0;
         text-decoration: none;
     }
@@ -34,8 +46,23 @@
             margin: 0;
         }
 
+
+        &:nth-child(2) {
+            .mobile ( {
+                    display: none;
+                }
+
+            );
+        }
+
         &:nth-child(3) {
             position: relative;
+
+            .mobile ( {
+                    display: none;
+                }
+
+            );
 
             &:before {
                 content: "5";

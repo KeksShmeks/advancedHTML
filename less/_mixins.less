@@ -3,3 +3,15 @@
     font-family: @family;
     color: @color;
 }
+
+.tablet(@rules) {
+    @media (max-width: @max-width-tablet) {
+        @rules();
+    }
+}
+
+.mobile(@rules) {
+    @media (max-width: @max-width-mobile) {
+        @rules();
+    }
+}

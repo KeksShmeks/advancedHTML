@@ -3,18 +3,48 @@
     min-height: 448px;
     padding: 10px 327px 10px 230px;
     box-sizing: border-box;
-    background-color: #fff;
+    background-color: #F4F4F4;
     background-image: url(../img/subscribe/subscribe_bg.jpg);
+    background-repeat: no-repeat;
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
+
+    .tablet ( {
+            padding: 53px 0 70px 0;
+            flex-direction: column;
+            background-size: auto auto;
+            background-position: left bottom;
+        }
+
+    );
+
+    .mobile ( {
+            padding: 48px 0 81px 0;
+
+        }
+
+    );
 }
 
 .subscribe-wrp {
     width: 360px;
     margin: 0 320px 0 0;
     text-align: center;
+
+    .tablet ( {
+            margin: 0 0 48px 0;
+        }
+
+    );
+
+    .mobile ( {
+            margin: 0 0 48px 0;
+           
+        }
+
+    );
 
     &:nth-child(2) {
         margin: 0;

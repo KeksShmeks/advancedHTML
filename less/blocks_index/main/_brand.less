@@ -5,6 +5,20 @@
     background-image: url(../img/brand/brand_img.png);
     background-repeat: no-repeat;
     position: relative;
+
+    .tablet ( {
+            min-height: 368px;
+            background-size: 50%;
+        }
+
+    );
+
+    .mobile ( {
+            min-height: 363px;
+            background-image: none;
+        }
+
+    );
 }
 
 .brand-name {
@@ -15,17 +29,55 @@
     top: 38%;
     border-left: 12px solid #F16D7F;
 
+    .mobile ( {
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+    );
+
     &__title {
         margin: 0;
         text-transform: uppercase;
         .text (37px, 'lato-semibold', #000);
 
+        .tablet ( {
+                .text (24px, 'lato-semibold', #000);
+            }
+
+        );
+
+        .mobile ( {
+                .text (20px, 'lato-semibold', #000);
+            }
+
+        );
+
         &_bold {
             .text (48px, 'lato-black', #000);
+
+            .tablet ( {
+                    .text (37px, 'lato-black', #000);
+                }
+
+            );
         }
 
         &_color {
             .text (37px, 'lato-semibold', #F16D7F);
+
+            .tablet ( {
+                    .text (24px, 'lato-semibold', #F16D7F);
+                }
+
+            );
+
+            .mobile ( {
+                    .text (20px, 'lato-semibold', #F16D7F);
+                }
+
+            );
         }
     }
 }
