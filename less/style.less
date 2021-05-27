@@ -13,3 +13,23 @@
 @import '../less/blocks_index/footer/_copyright.less';
 @import '../less/blocks_registration/_registration.less';
 @import '../less/blocks_cart/_cart.less';
+
+.catalog {
+    padding: 51px 230px 96px 230px;
+    box-sizing: border-box;
+}
+
+.catalog__items {
+    
+    display: grid;
+    grid-template-columns: repeat(3 , 1fr);
+    grid-template-rows: repeat(3, auto);
+    // grid-gap: 15px;
+    grid-template-areas: 
+        "h h h"
+        "h h h"
+        "h h h";
+}
+
+
+
