@@ -28,6 +28,7 @@
     }
 
     &__link {
+        display: block;
         text-transform: uppercase;
         .text (14px, 'lato-medium', #F16D7F);
         text-decoration: none;
@@ -39,21 +40,6 @@
 
         &:active {
             opacity: 0.8;
-        }
-
-        &_2 {
-            text-transform: capitalize;
-            .text (14px, 'lato-medium', #6F6E6E);
-            text-decoration: none;
-
-            &:hover,
-            &:focus {
-                text-decoration: underline dotted #6F6E6E;
-            }
-
-            &:active {
-                opacity: 0.8;
-            }
         }
     }
 
@@ -105,4 +91,15 @@
 
 .padding0_0_0_20 {
     padding: 0 0 0 20px;
+}
+
+.link-gray {
+    text-transform: capitalize;
+    .text (14px, 'lato-medium', #6F6E6E);
+    // text-decoration: none;
+
+    &:hover,
+    &:focus {
+        text-decoration: underline dotted #6F6E6E;
+    }
 }
