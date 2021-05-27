@@ -11,6 +11,18 @@
         background-color: #F8F3F4;
         padding: 0 0 0 230px;
         box-sizing: border-box;
+
+        .tablet ( {
+                padding: 0 0 0 16px;
+            }
+
+        );
+
+        .mobile ( {
+                justify-content: center;
+            }
+
+        );
     }
 
     &__title {
@@ -27,6 +39,19 @@
     justify-content: space-between;
     flex-wrap: wrap;
 
+    .tablet ( {
+            padding: 59px 16px 128px 16px;
+        }
+
+    );
+
+    .mobile ( {
+            flex-wrap: wrap;
+            padding: 39px 8px 96px 8px;
+        }
+
+    );
+
     &_wrp {
         display: flex;
         justify-content: space-between;
@@ -36,10 +61,37 @@
         &:nth-child(1) {
             margin: 0 128px 0 0;
             width: 652px;
+
+            .tablet ( {
+                    width: 744px;
+                    margin: 0;
+                    justify-content: center;
+                }
+
+            );
+
+            .mobile ( {
+                    width: 357px;
+                }
+
+            );
+
         }
 
         &:nth-child(2) {
             align-self: flex-start;
+
+            .tablet ( {
+                    flex-wrap: nowrap;
+                }
+
+            );
+
+            .mobile ( {
+                    flex-wrap: wrap;
+                }
+
+            );
         }
     }
 }
@@ -48,9 +100,16 @@
     min-height: 306px;
     margin: 0 0 40px 0;
     display: flex;
-    justify-content: start;
+    justify-content: space-between;
     flex-wrap: wrap;
     box-shadow: 10px 10px 15px -5px rgba(0, 0, 0, 0.5);
+
+    .mobile ( {
+            min-height: 188px;
+
+        }
+
+    );
 
     &:nth-child(2) {
         margin: 0 0 40px 0;
@@ -59,6 +118,13 @@
     &_img {
         display: block;
         background: #F4F4F4;
+
+        .mobile ( {
+                width: 143px;
+                height: auto;
+            }
+
+        );
     }
 
     &_wrp {
@@ -66,12 +132,33 @@
         padding: 22px 20px 10px 20px;
         box-sizing: border-box;
         position: relative;
+
+        .tablet ( {
+                width: 472px;
+                padding: 22px 20px 10px 20px;
+            }
+
+        );
+
+        .mobile ( {
+                width: 214px;
+                padding: 13px 20px 10px 17px;
+            }
+
+        );
     }
 
     &_title {
         .text (24px, 'lato-medium', #222222);
         margin: 0 0 42px 0;
         text-transform: uppercase;
+
+        .mobile ( {
+                .text (16px, 'lato-medium', #222222);
+                margin: 0 0 25px 0;
+            }
+
+        );
     }
 
     &_list {
@@ -80,10 +167,22 @@
         list-style: none;
         box-sizing: border-box;
         .text (22px, 'lato-medium', #575757);
+
+        .mobile ( {
+                .text (16px, 'lato-medium', #575757);
+            }
+
+        );
     }
 
     &_line {
         margin: 0 0 6px 0;
+
+        .mobile ( {
+                margin: 0 0 4px 0;
+            }
+
+        );
 
         &:nth-child(4) {
             margin: 0;
@@ -112,6 +211,12 @@
             height: 20px;
             width: 2px;
             background-color: #333;
+
+            .mobile ( {
+                    height: 12px;
+                }
+
+            );
         }
 
         &:before {
@@ -143,6 +248,20 @@
     cursor: pointer;
     align-self: center;
 
+    .tablet ( {
+            margin: 0 48px 64px 0;
+        }
+
+    );
+
+    .mobile ( {
+            width: 173px;
+            margin: 0 9px 48px 0;
+            min-height: 31px;
+        }
+
+    );
+
     &:hover,
     &:focus {
         background-color: #FF6A6A;
@@ -151,6 +270,20 @@
 
     &:active {
         opacity: 0.7;
+    }
+
+    &:nth-child(4) {
+        .tablet ( {
+                margin: 0 0 64px 0;
+            }
+
+        );
+
+        .mobile ( {
+                margin: 0 0 48px 0;
+            }
+
+        );
     }
 }
 
@@ -167,6 +300,19 @@
     align-items: flex-start;
     flex-wrap: wrap;
     margin: 0 0 57px 0;
+
+    .tablet ( {
+            margin: 0 15px 0 0;
+            width: 360px;
+        }
+
+    );
+
+    .mobile ( {
+            margin-bottom: 48px;
+        }
+
+    );
 
     &_title {
         width: 100%;
@@ -231,7 +377,7 @@
     flex-direction: column;
     flex-wrap: wrap;
     width: 360px;
-    padding: 39px 34px 42px 44px;
+    padding: 39px 43px 42px 44px;
     box-sizing: border-box;
     background: #F5F3F3;
 
@@ -284,4 +430,8 @@
 
 .cart-margin-left20 {
     margin: 0 0 0 20px;
+}
+
+.dBlock {
+    display: block;
 }
